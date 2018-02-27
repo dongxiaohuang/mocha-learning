@@ -83,7 +83,7 @@ to solve this problem:
 try
 `mocha --timeout 5000`
 change the timeout to 5000ms
-you can add to mocha.opt
+you can add to mocha.opt(s)
 
 ## sino
 `npm install sinon --save-dev`
