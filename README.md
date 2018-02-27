@@ -16,3 +16,60 @@ https://github.com/ideaq/learn-mocha
   execute once before Test
 5. afterEach
 6. after()
+
+##Reporter
+```
+$ mocha --reporters -nyan
+
+    dot - dot matrix
+    doc - html documentation
+    spec - hierarchical spec list
+    json - single json object
+    progress - progress bar
+    list - spec-style listing
+    tap - test-anything-protocol
+    landing - unicode landing strip
+    xunit - xunit reporter
+
+    min - minimal reporter (great with --watch)
+    json-stream - newline delimited json events
+    markdown - markdown documentation (github flavour)
+    nyan - nyan cat!
+```
+`mocha <testfilename.js> --reporters dot`
+`mocha <testfilename.js> --reporters doc`
+<!-- it will return a html format -->
+'mocha <testfilename.js> --reporters doc > <outputfilename.html>'
+
+
+##mongodb Test
+
+link:https://codeutopia.net/blog/2016/06/10/mongoose-models-and-unit-tests-the-definitive-guide/
+
+## touch mocha.opt file
+`--recursive `
+// recursive run all the test in the test directory
+## coverage
+`npm install blanket --save-dev`
+### inside package.json
+add:
+```
+npm install --save-dev istanbul
+```
+and change the "test" script to :
+```
+"script":{
+  <!-- test above is a directory name -->
+  "test": "mocha && mocha test --reporter markdown > coverage.md",
+  "coverage": "istanbul cover _mocha -- -R spec"
+}
+```
+link:https://www.youtube.com/watch?v=Q8Jl85FJz4E&t=900s
+## mocha done
+
+mocha allow us to do asyn test
+but we need to pass done to it;
+`it('', function(done){
+  #your test here
+  done;
+  });``
