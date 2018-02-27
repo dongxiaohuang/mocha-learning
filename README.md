@@ -51,6 +51,7 @@ link:https://codeutopia.net/blog/2016/06/10/mongoose-models-and-unit-tests-the-d
 // recursive run all the test in the test directory
 ## coverage
 `npm install blanket --save-dev`
+`mochawesome-report seems good worth try`
 ### inside package.json
 add:
 ```
@@ -72,4 +73,12 @@ but we need to pass done to it;
 `it('', function(done){
   #your test here
   done;
-  });``
+  });`
+
+## Timeout
+the default time out is 2000ms if the test time exceed
+then the test will fail;
+to solve this problem:
+try
+`mocha --timeout 5000`
+change the timeout to 5000ms
