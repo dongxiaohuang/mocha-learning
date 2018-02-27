@@ -74,7 +74,7 @@ but we need to pass done to it;
   #your test here
   done;
   });`
-done as a callback
+done as a callbackn
 
 ## Timeout
 the default time out is 2000ms if the test time exceed
@@ -83,7 +83,8 @@ to solve this problem:
 try
 `mocha --timeout 5000`
 change the timeout to 5000ms
-
+you can add to mocha.opt
 
 ## sino
 `npm install sinon --save-dev`
+`npm install sinon-chai --save-dev`
