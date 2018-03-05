@@ -88,3 +88,18 @@ you can add to mocha.opt(s)
 ## sino
 `npm install sinon --save-dev`
 `npm install sinon-chai --save-dev`
+
+
+## test browser
+
+'npm i selenium-webdriver --save-dev'
+link:https://www.seleniumhq.org/projects/webdriver/
+
+install chrome test unit
+Link: http://selenium-release.storage.googleapis.com/index.html
+and choose the latest version (selenium-server-standalone-3.9.1.jar)
+to execute it:
+in terminal
+`java -jar <selenium-server-standalone-3.9.1.jar>`//replace <>
+Link: https://chromedriver.storage.googleapis.com/index.html
+and choose the latest version (chrome driver)
