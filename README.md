@@ -49,9 +49,7 @@ link:https://codeutopia.net/blog/2016/06/10/mongoose-models-and-unit-tests-the-d
 ## touch mocha.opt file
 `--recursive `
 // recursive run all the test in the test directory
-## coverage
-`npm install blanket --save-dev`
-`mochawesome-report seems good worth try`
+
 ### inside package.json
 add:
 ```
@@ -65,6 +63,12 @@ and change the "test" script to :
   "coverage": "istanbul cover _mocha -- -R spec"
 }
 ```
+
+### coverage
+```
+npm run coverage
+```
+to 
 link:https://www.youtube.com/watch?v=Q8Jl85FJz4E&t=900s
 ## mocha done
 
